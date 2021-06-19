@@ -8,7 +8,8 @@
         <tr>
           <th>Cluster</th> <th>Id_Persona</th> <th>Prestacion</th><th>Tipotra</th><th>Tipoben</th><th>Beneficio</th>          
         </tr>
-        <tr v-for="(dato, index) in datos" v-bind:key="index">              
+        <tr v-for="(dato, index) in datos" v-bind:key="index">  
+          <td>{{dato.Cluster}} </td>            
           <td>{{dato.Id_persona}}</td>
           <td>{{dato.Prestacion}}</td>
           <td>{{dato.Tipotra}}</td>
